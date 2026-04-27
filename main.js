@@ -11,6 +11,8 @@ console.log(pi);
  * Datastructures
  */
 
+
+// Array
 const shoppingList = [
     "Milk", 
     "Coca-Cola", 
@@ -23,6 +25,31 @@ console.log(shoppingList.length);
 
 // for-loop example
 for(let counter = 0; counter < shoppingList.length; counter++) {
-    console.log(shoppingList[counter]);
-    //console.log(counter);
+    //.log("item in array: " + shoppingList[counter] + "\n" + "position of counter: " + counter);
+    console.log(`item in array: ${shoppingList[counter]}\n position of counter: ${counter}`);
 }
+
+// let num2 = 0;
+
+// for(let i = 0; i < 15; i++) {
+//     num2 += i;
+//     console.log(num2);
+// }
+// Object data structure
+
+
+function addPersonData(name, age, interests, posts, likes) {
+    return {
+        "name": name,
+        "age": age,
+        "interests": interests,
+        "posts": posts,
+        "likesOnallPosts": likes,
+    };
+}
+
+const johnDoe = addPersonData("John Doe", 33, ["programming", "gaming"], 2, 2);
+
+console.log(johnDoe);
+
+console.log(johnDoe);
